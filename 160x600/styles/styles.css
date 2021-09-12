@@ -1,0 +1,142 @@
+@charset "UTF-8"; /* CSS Document Common Elements */
+body {
+    position: absolute;
+    border: 0 none;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    background: #FFFFFF;
+    background-color: transparent;
+    /* below improves consistancey of font rendering across browsers */
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    /* below stops FireFox rendering copy too heavily */
+    -moz-osx-font-smoothing: grayscale;
+	transition: all 0.5s ease-out;
+}
+
+/* Fix to stop Mobile Safari automatically scaling text - http://bit.ly/1mumu5F */
+@media screen and (max-device-width: 480px) {
+    body {
+        -webkit-text-size-adjust: none;
+    }
+}
+
+#container {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 160px;
+    height: 600px;
+    margin: auto;
+    overflow: hidden;
+    display: block;
+    transform: rotate(-0.0000000001deg);
+    -webkit-transform: rotate(-0.0000000001deg);
+    border: 1px solid #000000;
+    cursor: pointer;
+    opacity: 0;
+    display: none;
+}
+
+.abs {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.full {
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+#background {
+    background: #FFFFFF;
+}
+
+.copy {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    left: 11px;
+}
+
+#maincopy1 {
+    top: 140px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#maincopy2 {
+    top: 164px;
+    font-size: 20px;
+    width: 220px;
+    height: 28px;
+}
+
+#maincopy3 {
+    top: 239px;
+    font-size: 20px;
+}
+
+.procopy {
+    top: 214px;
+    font-size: 20px;
+}
+
+.procopy:nth-child(even) {
+    color: #EA5E39
+}
+
+.procopy:nth-child(odd) {
+    color: #DEF034
+}
+
+#cta-circle {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    color: #fff;
+    left: 124px;
+    top: 324px;
+    padding: 1px 0px 1px 3px;
+    font-weight: bold;
+    font-size: 14px;
+	transition: all 0.5s ease-out;
+}
+
+#copy-frame06 {
+    color: #ffffff !important;
+}
+
+#replay-btn {
+    width: 20px;
+    height: auto;
+    left: 10px;
+    top: 10px;
+    position: relative;
+    cursor: pointer;
+	transition: all 0.5s ease-out;
+}
+
+#replay-btn:hover {
+    transform: rotate(-360deg);
+    transition: all 0.5s ease-out;
+}
+
+#container:hover #cta-circle {
+    transform: translateX(10px);
+	transition: all 0.5s ease-out;
+}
+
+#cta-copy {
+    top: 324px;
+}
